@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#Container{
+    width: 375px;
+    height: 676px;
+    border: 2px solid #AFAFAF;
+    border-radius: 10px;
+    color: #333333;
+    position: relative;
+   
+}
+
+
+/* DESKTOP VIEW..................*/
+
+@media screen and (min-width: 1200px){
+
+    #interbody{
+        width: 1200px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    
+    #Container{
+        flex-direction: row;
+        width: 473px;
+        height: 634px;
+        padding: 30px;
+    }
+
+       
+}  
+
+
+
+
+/* PHOTO SHORT */
+
+#photoContainer1 >img{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; 
+    right: 30px; 
+}
+
+
+#isologotipo{
+    width: 130px;
+    height: 18px;
+    top: 35px;
+    left: 18px;
+    padding: 20px 20px 30px 20px;
+}
+
+.textSuperior{
+    width: 100%;
+    height: auto;
+    border: 30px;
+    padding: 0px 0px 30px 0px;
+
+}
+.textSuperior >h2{
+    font-size: 1.7rem;
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.textSuperior >p{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+#Search{
+    width: 95.34px;
+    height: 38px;
+    font-size: 18px;
+    color: rgba(130, 130, 130, 1);
+    background: none;
+      
+    border-radius: 5px;
+    border: 1px solid rgba(130, 130, 130, 1);
+    cursor: pointer;
+    
+}
+
+
+#containerTextProfile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px 30px 20px;
+}
+  
+#textProfile {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+#textProfile >p {
+    color: rgba(189, 189, 189, 1);
+    font-size: 15px;
+    
+}
+
+
+
+/* PERFIL PHOTO */
+
+#photoContainer {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+}
+  
+#photoContainer h2 {
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(189, 189, 189, 1);
+}
+
+#photoContainer >img{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+}
+
+
+/* TEXTO DATOS */
+#nameText {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(189, 189, 189, 1); 
+    padding: 0px 20px 0px 20px;
+}
+
+#nameText >h2{
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(189, 189, 189, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#nameText >p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#bioText {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(189, 189, 189, 1); 
+    padding: 0px 20px 0px 20px;
+}
+
+#bioText >h2{
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(189, 189, 189, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#bioText >p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#mailText {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(189, 189, 189, 1); 
+    padding: 0px 20px 0px 20px;
+}
+
+#mailText >h2{
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(189, 189, 189, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#mailText >p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#passText {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(189, 189, 189, 1);
+    border-bottom: 1px solid rgba(189, 189, 189, 1); 
+    padding: 0px 20px 0px 20px;
+}
+
+#passText >h2{
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(189, 189, 189, 1);
+    padding: 20px 0px 30px 0px;
+}
+
+#passText >p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1);
+    padding: 20px 0px 30px 0px;
+}
