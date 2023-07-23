@@ -21,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $resultado = $mysqli->query($query);
 
-
     if ($resultado) {
         $email = $mysqli->real_escape_string($email);
     

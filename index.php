@@ -27,6 +27,8 @@
 
             <div class="inputRegister">
                 <form action="guardar_bd.php" method="post" enctype="multipart/form-data">
+
+                
                     <!-- <label for="img"> Subir Imagen:</label>
                     <br>
                     <input type="file" id="img" name="imagen">

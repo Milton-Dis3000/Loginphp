@@ -71,8 +71,6 @@ $datos = $_SESSION["datos_usuario"];
 
             </form>
 
-
-
         </section>
 
     </main>
