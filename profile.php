@@ -3,7 +3,6 @@ session_start();
 $datos = $_SESSION["datos_usuario"];
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
