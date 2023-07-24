@@ -22,7 +22,7 @@
             </div>
 
             <div class="inputRegister">
-                <form action="profile.php" method="post">
+                <form action="logindb.php" method="post">
                     <div class="input-container">
                         <label for="correo"></label>
                         <input type="email" id="correo" name="email" placeholder="Email" />
@@ -36,26 +36,38 @@
                     </div>
 
                     <input id="Search" type="submit" value="Login" />
-                </form>
-            </div>
-            <div class="footerLogin">
-                <p>or continue with these social profile</p>
-                <div id="socialIcons">
-                    <i class="fa-brands fa-google"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-github"></i>
 
-                </div>
 
-                <form action="login.php" method="post">
-                <div id="loginMember">
-                    <p>Don’t have an account yet?</p>
-                    <button >Register</button>
-                </div>
+                    <div class="footerLogin">
+                        <p>or continue with these social profile</p>
+                        <div id="socialIcons">
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
+
+                        </div>
+
+
+                        <div id="loginMember">
+                            <p>Don’t have an account yet?</p>
+                            <a href="index.php">Register</a>
+                    
+                            <!-- <button>Register</button> -->
+                        </div>
+
+
+                    </div>
+
+
+
                 </form>
-             
+
+
+
+
             </div>
+
 
 
 

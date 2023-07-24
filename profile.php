@@ -23,7 +23,7 @@ $datos = $_SESSION["datos_usuario"];
 
              
                 <div id="photoContainer1">
-                    <img src="" alt="photo">
+                    <img src="./img/perfilvacio.png" alt="photo">
                 </div>
 
                 <div class="textSuperior">

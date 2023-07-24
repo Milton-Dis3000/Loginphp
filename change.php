@@ -12,55 +12,61 @@ $datos = $_SESSION["datos_usuario"];
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/change.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <section id="generalContainer">
-        <form action="change.php" method="post" enctype="multipart/form-data">
+        <form action="change_bd.php" method="post" enctype="multipart/form-data">
             <nav>
                 <div id="isologotipo">
                     <img src="./img/devchallenges.svg" alt="logo">
                 </div>
+                <ul>
 
-                
-                <div id="toggleBar">
                     <div id="photoContainer1">
-                        <img src="img/perfil.jpg" alt="photo">
+                        <img src="./img/perfilvacio.png" alt="photo">
                         <p>Xantle Neal</p>
                         <img id="Icons" src="img/flechclip.svg" alt="Iconflecha">
                     </div>
-                    <div id="infeText">
+                    <div id="toggleBar">
 
-                        <div id="profile">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <p>My profile</p>
+                        <div id="infeText">
+
+                            <div id="profile">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <!-- <p>My profile</p> -->
+                                <a href="profile.php">My profile</a>
+                            </div>
+
+                            <div id="chat">
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>Group chat</p>
+
+                            </div>
+
+                            <hr>
+                            <div id="logout">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <!-- <p>Logout</p> -->
+                                <a href="index.php">Logout</a>
+
+                            </div>
                         </div>
 
-                        <div id="chat">
-                            <i class="fa-solid fa-user-group"></i>
-                            <p>Group chat</p>
-
-                        </div>
-
-                        <hr>
-                        <div id="logout">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                            <p>Logout</p>
-                        </div>
                     </div>
 
-                    <!-- <a href="logout.php"></a> -->
 
-                </div>
+
+                </ul>
 
 
             </nav>
 
 
             <div class="backText">
-                <button>
-                    < Back</button>
-
+                <a href="profile.php">
+                    < Back</a>
             </div>
 
             <div class="contenedorPrincipal">
@@ -70,10 +76,17 @@ $datos = $_SESSION["datos_usuario"];
                         <p>Changes will be reflected to every services</p>
                     </div>
 
-                    <div id="photoContainer">
-                        <img src="img/perfil.jpg" alt="photo">
-                        <h2>CHANGE PHOTO</h2>
+                    <!-- Agregar el atributo name="photo" al campo para seleccionar la foto -->
+                    <div class="changePhoto">
+                        <label for="imagen">
+                            <img src="./img/perfilvacio.png" alt="photo">
+                            <h2>CHANGE PHOTO</h2>
+                        </label>
                     </div>
+
+                   
+                    <input type="file" id="img" name="imagen">
+                    <br>
 
                     <div class="changeName">
                         <p>Name</p>
@@ -100,9 +113,9 @@ $datos = $_SESSION["datos_usuario"];
                         <input type="password" id="password" name="changePassword" placeholder="Enter your password..." />
                     </div>
 
-                
+
                     <div id="saveButton">
-                        <button>Save</button>
+                        <button type="submit">Save</button>
                     </div>
 
 

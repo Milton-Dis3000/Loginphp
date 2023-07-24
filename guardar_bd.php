@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Registro exitoso, redirige a profile.php
         session_start();
         $_SESSION["datos_usuario"] = array("email" => $email); // Aquí puedes almacenar más datos si lo necesitas
-        header("Location: profile.php");
+        header("Location: login.php");
         exit();
     } else {
         echo "Error al registrar el usuario: " . $mysqli->error;

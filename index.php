@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <main id="interbody">
         <section id="Container">
 
@@ -27,12 +26,12 @@
             <div class="inputRegister">
                 <form action="guardar_bd.php" method="post" enctype="multipart/form-data">
 
-                
+
                     <!-- <label for="img"> Subir Imagen:</label>
                     <br>
                     <input type="file" id="img" name="imagen">
                     <br> -->
-                    
+
                     <div class="input-container">
                         <label for="correo"></label>
                         <input type="email" id="correo" name="email" placeholder="Email" />
@@ -62,12 +61,12 @@
 
                 </div>
 
-                <form action="login.php" method="post">
-                    <div id="loginMember">
-                        <p>Adready a member?</p>
-                        <button>Login</button>-
-                    </div>
-                </form>
+
+                <div id="loginMember">
+                    <p>Adready a member?</p>
+                    <button>Login</button>-
+                </div>
+
 
 
 
@@ -82,14 +81,14 @@
 
     </main>
 
-   <?php
-   session_start();
-   if (isset($_SESSION ["error_tipo"])) {
-    print_r("<p>". $_SESSION['error_tipo']."</>");
-   }
-   unset($_SESSION["error_tipo"]);
-   ?>
-  
+    <?php
+    session_start();
+    if (isset($_SESSION["error_tipo"])) {
+        print_r("<p>" . $_SESSION['error_tipo'] . "</>");
+    }
+    unset($_SESSION["error_tipo"]);
+    ?>
+
 
 
 

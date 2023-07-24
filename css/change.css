@@ -33,8 +33,26 @@ nav {
     top: 24px; 
     width: 150px;
     height: 233px;
+
+    height: 0px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    transition: 1s height ease-in;
  
   }
+
+  #toggleBar.active{
+    padding: 60px 0px 0px 0px;
+    height: auto;
+  }
+
+
+
+
+
+
+
 
   #photoContainer1 {
     display: flex; 
@@ -78,6 +96,14 @@ nav {
     cursor: pointer;
 }
 
+#profile a{
+   text-decoration: none;
+   color: #4F4F4F;
+}
+
+
+
+
 #chat{
     display: flex;
     gap: 10px;
@@ -85,17 +111,24 @@ nav {
     color: #4F4F4F;
 }
 
-#logout{
+#logout {
+    text-decoration: none;
     display: flex;
     gap: 10px;
+    color: #ff3838;
     padding: 20px 0px 20px 10px;
+    
+}
+
+#logout a {
+    text-decoration: none;
     color: #ff3838;
     cursor: pointer;
+   
 }
 
 
-
-.backText > button{
+.backText > a{
     display: flex;
     left: 320px;
     color: rgba(45, 156, 219, 1);
@@ -105,6 +138,7 @@ nav {
     cursor: pointer;
     background:none;
     border: none;
+    text-decoration: none;
 }
 
 
@@ -144,24 +178,35 @@ nav {
 
 /* PERFIL PHOTO */
 
-#photoContainer {
-    display: flex;
-    align-items: center; 
-    padding: 20px 20px 15px 0px;
-    gap: 20px;
-}
-  
-#photoContainer h2 {
-    margin-right: 10px;
-    font-size: 13px;
-    color: rgba(189, 189, 189, 1);
-}
 
-#photoContainer >img{
-    width: 72px;
-    height: 72px;
-    border-radius: 8px;
-}
+.changePhoto {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+
+  .changePhoto img {
+    width: 90px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  
+ 
+  .changePhoto h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #707070;
+  }
+  
+  
+  
+
 
 
 /* INPUT CHANGE DATOS */
