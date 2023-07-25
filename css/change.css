@@ -178,6 +178,13 @@ nav {
 
 /* PERFIL PHOTO */
 
+.changePhoto > input{
+    display: none;
+
+
+}
+
+
 
 .changePhoto {
     width: 100%;

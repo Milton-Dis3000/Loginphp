@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     move_uploaded_file($temporal, $rutaCompleta);
 
     // Consulta SQL para insertar el nuevo usuario en la tabla
-    $query = "INSERT INTO usuarios (name, bio, phone, email, password, photo, ruta_img) VALUES ('$changeName', '$changeBio', '$changePhone', '$changeEmail', '$changePassword', '$photo', '$rutaCompleta')";
+    $query = "INSERT INTO usuarios (name, bio, phone, email, password, ruta_img) VALUES ('$changeName', '$changeBio', '$changePhone', '$changeEmail', '$changePassword', '$rutaCompleta')";
     $resultado = $mysqli->query($query);
 
     if ($resultado) {
@@ -20,13 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $query = "SELECT * FROM usuarios WHERE email='$changeEmail'";
         $usuarioDB = $mysqli->query($query);
 
+        $changePassword = $mysqli->real_escape_string($changePassword);
+        $query = "SELECT * FROM usuarios WHERE password='$changePassword'";
+        $usuarioDB = $mysqli->query($query);
+
         $changeName = $mysqli->real_escape_string($changeName);
         $query = "SELECT * FROM usuarios WHERE name='$changeName'";
         $usuarioDB = $mysqli->query($query);
 
-        $changeBio = $mysqli->real_escape_string($changeBio);
-        $query = "SELECT * FROM usuarios WHERE bio='$changeBio'";
-        $usuarioDB = $mysqli->query($query);
+       
 
         if ($usuarioDB->num_rows === 1) {
             // Si se encontró el usuario en la base de datos, almacenar los datos en la sesión
@@ -42,4 +44,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Error en el resultado";
     }
 }
-?>
+?> 

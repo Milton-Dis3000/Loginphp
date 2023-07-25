@@ -23,7 +23,7 @@ $datos = $_SESSION["datos_usuario"];
 
              
                 <div id="photoContainer1">
-                    <img src="./img/perfilvacio.png" alt="photo">
+                    <img src="<?= $datos["ruta_img"] ?>" alt="photo">
                 </div>
 
                 <div class="textSuperior">
@@ -42,27 +42,27 @@ $datos = $_SESSION["datos_usuario"];
 
                 <div id="photoContainer">
                     <h2>PHOTO</h2>
-                    <img src="./img/perfilvacio.png" alt="photo">
+                    <img src="<?= $datos["ruta_img"]; ?>" alt="photo">
                 </div>
 
                 <div id="nameText">
                     <h2>NAME</h2>
-                    <p>Xantle Neal</p>
+                    <p><?= $datos["name"]; ?></p>
                 </div>
 
                 <div id="bioText">
                     <h2>BIO</h2>
-                    <p>I am a software developer...</p>
+                    <p><?= $datos["bio"]; ?></p>
                 </div>
 
                 <div id="mailText">
                     <h2>EMAIL</h2>
-                    <p><?= $datos["email"] ?></p>
+                    <p><?= $datos["email"]; ?></p>
                 </div>
 
                 <div id="passText">
                     <h2>PASSWORD</h2>
-                    <p>************</p>
+                    <p><?= $datos["password"] ?></p>
                 </div>
 
                 </div>

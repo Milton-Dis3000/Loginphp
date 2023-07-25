@@ -35,7 +35,7 @@ $datos = $_SESSION["datos_usuario"];
 
                             <div id="profile">
                                 <i class="fa-solid fa-circle-user"></i>
-                                <!-- <p>My profile</p> -->
+                          
                                 <a href="profile.php">My profile</a>
                             </div>
 
@@ -48,7 +48,7 @@ $datos = $_SESSION["datos_usuario"];
                             <hr>
                             <div id="logout">
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                <!-- <p>Logout</p> -->
+                              
                                 <a href="index.php">Logout</a>
 
                             </div>
@@ -76,17 +76,15 @@ $datos = $_SESSION["datos_usuario"];
                         <p>Changes will be reflected to every services</p>
                     </div>
 
-                    <!-- Agregar el atributo name="photo" al campo para seleccionar la foto -->
+                  
                     <div class="changePhoto">
-                        <label for="imagen">
+                        <label for="img">
                             <img src="./img/perfilvacio.png" alt="photo">
                             <h2>CHANGE PHOTO</h2>
                         </label>
+                        <input type="file" id="img" name="imagen">
                     </div>
-
-                   
-                    <input type="file" id="img" name="imagen">
-                    <br>
+                    
 
                     <div class="changeName">
                         <p>Name</p>

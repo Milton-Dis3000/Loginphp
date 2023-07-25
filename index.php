@@ -27,10 +27,6 @@
                 <form action="guardar_bd.php" method="post" enctype="multipart/form-data">
 
 
-                    <!-- <label for="img"> Subir Imagen:</label>
-                    <br>
-                    <input type="file" id="img" name="imagen">
-                    <br> -->
 
                     <div class="input-container">
                         <label for="correo"></label>
@@ -38,10 +34,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
 
-                    <!-- <div>
-                        <img src="img_subidas/perfil.jpg" alt="">
-                    </div> -->
-
+                
                     <div class="input-container">
                         <label for="contra"></label>
                         <input type="password" id="contra" name="contra" placeholder="Password" />
@@ -64,16 +57,12 @@
 
                 <div id="loginMember">
                     <p>Adready a member?</p>
-                    <button>Login</button>-
+                    <a href="login.php">Login</a>
                 </div>
 
 
 
-
-
-
             </div>
-
 
 
 
