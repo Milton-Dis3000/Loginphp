@@ -29,10 +29,10 @@ nav {
   
   #toggleBar {
     position: absolute;
-    right: 20px; 
+    right: 25px; 
     top: 24px; 
     width: 150px;
-    height: 233px;
+    
 
     height: 0px;
     padding: 0;
@@ -46,11 +46,6 @@ nav {
     padding: 60px 0px 0px 0px;
     height: auto;
   }
-
-
-
-
-
 
 
 
@@ -105,10 +100,6 @@ nav {
 
 
 
-
-
-
-
 #infeText{
     width: 100%;
     height: 75%;
@@ -129,8 +120,6 @@ nav {
    text-decoration: none;
    color: #4F4F4F;
 }
-
-
 
 
 #chat{
@@ -190,66 +179,79 @@ nav {
     width: 100%;
     height: auto;
     border: 30px;
-    padding: 30px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
 
 }
 .textSuperior >h2{
     font-size: 1.7rem;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
     
 }
 
 .textSuperior >p{
     font-size: 0.9rem;
     color: rgba(130, 130, 130, 1);
+    padding-bottom: 10px;
 }
 
 
 /* PERFIL PHOTO */
 
-.changePhoto > input{
-    display: none;
+.changePhoto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
 
+.change-photo-label {
+    position: relative; 
+    display: block;
+}
 
+.change-photo-label i {
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(224, 224, 224);
+    font-size: 20px;
 }
 
 #profile-img {
     width: 100px;
-    height:100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
+    position: relative;
+    display: block;
+    opacity: 0.8;
+}
+
+.change-photo-text {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.changePhoto h2 {
+    margin: 0;
+    font-size: 15px;
+    color: #707070;
+    margin-left: 10px; 
+}
+  
+.changePhoto > input {
+    display: none;
 }
 
 
 
 
-.changePhoto {
-    width: 100%;
-    height: auto;
-    
-  }
-  
 
-  .changePhoto img {
-    width: 90px;
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 10px;
-    padding: 10px 0px 10px 0px;
-  }
-  
- 
-  .changePhoto h2 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-size: 15px;
-    color: #707070;
-  }
-  
-  
-  
+
 
 
 

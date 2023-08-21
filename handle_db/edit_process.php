@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && $_POST) {
 
     $idUser = $_SESSION["user_data"]["id"];
 
-    if (isset($_FILES["image"])) {
+    if (isset($_FILES["image"]) && $_FILES["image"]["error"] === 0) {
         $dataImg = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
         $mysqli->query("UPDATE usuarios SET photo='$dataImg' WHERE id=$idUser");
     }

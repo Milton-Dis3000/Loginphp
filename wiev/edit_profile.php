@@ -43,13 +43,13 @@ $userData = $_SESSION["user_data"];
 
                         <div id="toggleIcons">
 
-                        <!-- <i class="fa-solid fa-caret-up"></i> -->
-                        <i class="fa-solid fa-sort-down"></i>
+                            <!-- <i class="fa-solid fa-caret-up"></i> -->
+                            <i class="fa-solid fa-sort-down"></i>
 
                         </div>
-                        
+
                     </div>
-                    
+
                     <div id="toggleBar">
 
                         <div id="infeText">
@@ -107,8 +107,11 @@ $userData = $_SESSION["user_data"];
                                 echo "<img id='profile-img' src='../img/perfilvacio.png' alt='photo'>";
                             }
                             ?>
-                            <h2>CHANGE PHOTO</h2>
+                            <i class="fa-solid fa-camera"></i>
 
+                            <div class="change-photo-text">
+                                <h2>CHANGE PHOTO</h2>
+                            </div>
                         </label>
                         <input type="file" name="image" id="img">
                     </div>
