@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
 </head>
 
@@ -14,7 +14,7 @@
         <section id="Container">
 
             <div id="isologotipo">
-                <img src="./img/devchallenges.svg" alt="logo">
+                <img src="../img/devchallenges.svg" alt="logo">
             </div>
 
             <div class="textSuperior">
@@ -22,16 +22,16 @@
             </div>
 
             <div class="inputRegister">
-                <form action="logindb.php" method="post">
+                <form action="../handle_db/login_process.php" method="post" enctype="multipart/form-data">
                     <div class="input-container">
                         <label for="correo"></label>
-                        <input type="email" id="correo" name="email" placeholder="Email" />
+                        <input type="email" id="correo" name="email" placeholder="Email" required />
                         <i class="fas fa-envelope"></i>
                     </div>
 
                     <div class="input-container">
                         <label for="contra"></label>
-                        <input type="password" id="contra" name="contra" placeholder="Password" />
+                        <input type="password" id="contra" name="contra" placeholder="Password" required/>
                         <i class="fas fa-unlock"></i>
                     </div>
 
@@ -51,9 +51,8 @@
 
                         <div id="loginMember">
                             <p>Don’t have an account yet?</p>
-                            <a href="index.php">Register</a>
-                    
-                            <!-- <button>Register</button> -->
+                            <a href="../index.php">Register</a>
+
                         </div>
 
 

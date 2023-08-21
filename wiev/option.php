@@ -9,26 +9,25 @@ $datos = $_SESSION["datos_usuario"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/profile.css">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 
 <body>
     <main id="interbody">
         <section id="Container">
-            <form action="change.php" method="post" enctype="multipart/form-data">
+            <form action="" method="post" enctype="multipart/form-data">
                 <div id="isologotipo">
-                    <img src="./img/devchallenges.svg" alt="logo">
+                    <img src="../img/devchallenges.svg" alt="logo">
                 </div>
 
-             
                 <div id="photoContainer1">
                     <img src="<?= $datos["ruta_img"] ?>" alt="photo">
                 </div>
 
                 <div class="textSuperior">
-                    <h2> Personal info</h2>
-                    <p>Basic info, like your name and photo</p>
+                    <h2>Edit Personal info</h2>
+                    <p>Edit your basic info</p>
                 </div>
 
                 <div id="containerTextProfile">
@@ -37,7 +36,7 @@ $datos = $_SESSION["datos_usuario"];
                         <p>Some info may be visible to <br>other people</p>
                     </div>
 
-                    <input id="Search" type="submit" value="Edit" />
+                    <input id="Search" type="submit" value="Save" />
                 </div>
 
                 <div id="photoContainer">
@@ -47,12 +46,12 @@ $datos = $_SESSION["datos_usuario"];
 
                 <div id="nameText">
                     <h2>NAME</h2>
-                    <p><?= $datos["name"]; ?></p>
+                    <input type="text" name="name" value="<?= $datos["name"]; ?>">
                 </div>
 
                 <div id="bioText">
                     <h2>BIO</h2>
-                    <p><?= $datos["bio"]; ?></p>
+                    <textarea name="bio"><?= $datos["bio"]; ?></textarea>
                 </div>
 
                 <div id="mailText">
@@ -64,17 +63,9 @@ $datos = $_SESSION["datos_usuario"];
                     <h2>PASSWORD</h2>
                     <p><?= $datos["password"] ?></p>
                 </div>
-
-                </div>
-
-
             </form>
-
         </section>
-
     </main>
-
-
 </body>
 
 </html>

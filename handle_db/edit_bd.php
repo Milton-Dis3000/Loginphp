@@ -2,7 +2,7 @@
 // CONEXIÓN A BD Y MANEJO DE ERRORES
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    require("connection.php");
+    require("../connection.php");
 
     // Recuperar datos del formulario
     extract($_POST);
@@ -15,16 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $resultado = $mysqli->query($query);
 
     if ($resultado) {
+        
         // Si el usuario fue insertado exitosamente, realizar una consulta adicional para recuperar los datos
-        $changeEmail = $mysqli->real_escape_string($changeEmail);
         $query = "SELECT * FROM usuarios WHERE email='$changeEmail'";
         $usuarioDB = $mysqli->query($query);
 
-        $changePassword = $mysqli->real_escape_string($changePassword);
         $query = "SELECT * FROM usuarios WHERE password='$changePassword'";
         $usuarioDB = $mysqli->query($query);
 
-        $changeName = $mysqli->real_escape_string($changeName);
         $query = "SELECT * FROM usuarios WHERE name='$changeName'";
         $usuarioDB = $mysqli->query($query);
 
@@ -35,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $data = $usuarioDB->fetch_assoc();
             session_start();
             $_SESSION["datos_usuario"] = $data;
-            header("Location: profile.php");
+            header("Location: ../wiev/profile.php");
             exit();
         } else {
             echo "El usuario no existe.";

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./css/Style.css">
     <title>Register</title>
 </head>
 
@@ -24,20 +24,19 @@
             </div>
 
             <div class="inputRegister">
-                <form action="guardar_bd.php" method="post" enctype="multipart/form-data">
-
+                <form action="handle_db/Register_process.php" method="post" enctype="multipart/form-data">
 
 
                     <div class="input-container">
                         <label for="correo"></label>
-                        <input type="email" id="correo" name="email" placeholder="Email" />
+                        <input type="email" id="correo" name="email" placeholder="Email" required />
                         <i class="fas fa-envelope"></i>
                     </div>
 
-                
+
                     <div class="input-container">
                         <label for="contra"></label>
-                        <input type="password" id="contra" name="contra" placeholder="Password" />
+                        <input type="password" id="contra" name="contra" placeholder="Password" required />
                         <i class="fas fa-unlock"></i>
                     </div>
                     <input id="Search" type="submit" value="Start coding now" />
@@ -54,33 +53,34 @@
 
                 </div>
 
-
                 <div id="loginMember">
                     <p>Adready a member?</p>
-                    <a href="login.php">Login</a>
+                    <a href="wiev/login.php">Login</a>
                 </div>
 
 
-
             </div>
-
 
 
         </section>
 
     </main>
 
-    <?php
-    session_start();
-    if (isset($_SESSION["error_tipo"])) {
-        print_r("<p>" . $_SESSION['error_tipo'] . "</>");
-    }
-    unset($_SESSION["error_tipo"]);
-    ?>
+
 
 
 
 
 </body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
 
 </html>
