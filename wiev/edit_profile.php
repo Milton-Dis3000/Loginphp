@@ -102,9 +102,9 @@ $userData = $_SESSION["user_data"];
                             <?php
                             if ($userData['photo'] !== null) {
                                 $dataImg = base64_encode($userData['photo']);
-                                echo "<img class='profile-img' src='data:image/jpg;base64, $dataImg'>";
+                                echo "<img id='profile-img' src='data:image/jpg;base64, $dataImg'>";
                             } else {
-                                echo "<img class='profile-img' src='../img/perfilvacio.png' alt='photo'>";
+                                echo "<img id='profile-img' src='../img/perfilvacio.png' alt='photo'>";
                             }
                             ?>
                             <h2>CHANGE PHOTO</h2>

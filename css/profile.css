@@ -54,6 +54,9 @@ body{
     position: absolute;
     top: 20px; 
     right: 30px; 
+    object-fit: cover;
+    
+    
 }
 
 
@@ -150,6 +153,7 @@ body{
     height: 72px;
     border-radius: 8px;
     object-fit: contain;
+    object-fit: cover;
 }
 
 

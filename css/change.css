@@ -65,6 +65,7 @@ nav {
     width: 40px;
     height: 40px;
     border-radius: 3px;
+    object-fit: cover;
     
   }
   
@@ -77,12 +78,14 @@ nav {
   #photoContainer1 p {
     font-size: 11px;
     margin-right: 10px; 
+    
   }
   
   #photoContainer1 img:last-child {
     width: 8px;
     height:8px;
     cursor: pointer;
+    object-fit: cover;
   }
 
 
@@ -91,7 +94,7 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    align-items: center; /* Centrar verticalmente los iconos */
+    align-items: center;
 }
 
 #toggleIcons i {
@@ -209,6 +212,14 @@ nav {
 
 
 }
+
+#profile-img {
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 
